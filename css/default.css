@@ -1,0 +1,380 @@
+/*
+Версия 151102 — MHG + ZA + SыR
+• сборка из повторяющихся файлов
+
+Версия 151121
+• Virtuozno / Основы
+• #ABS-* → .dg-P*
+• .dg-FL, .dg-FR
+
+Версия 160120
+• Virtuozno / Основы → DGTZ / Основы
+• #Virtuozno → #dg-Arcem
+• #Workspace → #dg-Workspace
+• vz-* → dg-*
+
+Версия 160920
+• .dg-link-wrap → .dg-link--wrap
+• .dg-OA, .dg-OH, .dg-OS, .dg-OV
+• .dg-TAL, .dg-TAR, .dg-TAC, .dg-TAJ
+• .dg-list → .dg-list.dg-list--inline-block
+• .dg-list → .dg-list.dg-list--flexbox
+
+Версия 161014
+• .dg-list — вскоре будет именно списком маркированным или нумерванным.
+• .dg-list.dg-list--inline-block → .dg-set.dg-set--inline-block
+• .dg-list.dg-list--flexbox      → .dg-set.dg-set--flexbox
+• .dg-fi--pct20, .dg-fi--pct25 (.dg-fi--fourth), .dg-fi--pct33 (.dg-fi--third), .dg-fi--pct50 (.dg-fi--half), .dg-fi--pct66, .dg-fi--pct75
+*/
+
+
+
+/* DGTZ / Основы
+//////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* 151121 */#dg-Arcem{position:relative;overflow-y:auto;width:100%}
+
+/*#dg-Arcem{min-height:100%;height:auto!important;height:100%}*/#dg-Arcem{min-height:100%;height:100%}
+#dg-Arcem{position:relative;overflow:hidden;font-size:10px}
+#dg-Workspace{overflow:auto}
+#dg-Workspace,.dg-P,.dg-PA,.dg-PC,.dg-PL,.dg-PR{position:absolute;top:0;left:0;right:0;bottom:0}
+.dg-PA{bottom:auto}.dg-PC{top:auto}.dg-PL{right:auto}.dg-PR{left:auto}
+.dg-P-fixed{position:fixed}.dg-P-relative{position:relative}
+
+
+/*#ABS-A,/*#ABS-B,* /#ABS-C,/*#ABS-Notify,* /#ABS-L,#ABS-R,/** /
+{position:absolute;top:0;left:0;right:0;bottom:0}
+.dg-abs-A{bottom:auto}.dg-abs-C{top:auto}.dg-abs-L{right:auto}.dg-abs-R{left:auto}
+/*#ABS-A{bottom:auto}#ABS-C{top:auto}#ABS-L{right:auto}#ABS-R{left:auto}
+#ABS-C{z-index:5;max-height:50%;background:#400;color:#FFF;font-size:1.5em;padding:1em}/**/
+
+
+
+/* 160121 :: From Primary / Основные селекторы
+///////////////////////////////////////////////////////////////////////////// */
+.dg-wrapper {
+	width: 100%;
+	/*min-width: 980px; — использовать с классом .dg-minW */
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+}
+
+/* Header | Attic | Чердак
+---------------------------------------------------------------------------------------------------- */
+.dg-Attic {
+	position: relative;
+	width: 100%;
+	/*height: 150px;*/
+	/*background: #FFE680;*/
+	/*background-color: #F7F6F2;*/
+}
+
+
+/* Middle | Basis | Основа
+---------------------------------------------------------------------------------------------------- */
+.dg-Basis {
+	width:100%;
+	padding:0 0 22em;
+	position:relative;
+}
+	.Basis:after {
+		display: table;
+		clear: both;
+		content: '';
+	}
+.dg-container {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+}
+.dg-content {
+	padding: 0 270px 0 270px;
+}
+
+
+/* Left Sidebar | PanelL
+---------------------------------------------------------------------------------------------------- */
+.dg-PanelL {
+	float: left;
+	width: 250px;
+	margin-left: -100%;
+	position: relative;
+	background: #B5E3FF;
+}
+
+
+/* Right Sidebar | PanelR
+---------------------------------------------------------------------------------------------------- */
+.dg-PanelR {
+	float: left;
+	width: 250px;
+	margin-left: -250px;
+	position: relative;
+	background: #FFACAA;
+}
+
+
+/* Footer | Celario | Подвал
+---------------------------------------------------------------------------------------------------- */
+.dg-Celario {
+	margin: -22em auto 0;
+	/*min-width: 980px; — использовать с классом .dg-minW */
+	height: 22em;
+	position: relative;
+}
+
+
+/* Entire | Цельный | derfex? :: 160222
+---------------------------------------------------------------------------------------------------- */
+.dg-Entire{display:block;width:100%;height:100%}
+
+/* ↑↑↑↑↑ 160121 :: From Primary / Основные селекторы
+//////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* ↑↑↑↑↑ DGTZ / Основы
+//////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+/* Interface / Элементы интерфейса
+//////////////////////////////////////////////////////////////////////////////////////////////////// */
+.dg-link,.dg-link--wrap{text-decoration:none;color:inherit}
+.dg-link--wrap{display:block}
+
+
+.dg-button{position:relative;cursor:pointer;text-decoration:none;text-align:center}
+.dg-ico{font-style:normal}.dg-txt{}.dg-kbd{}
+
+/* Для текстовых полей:
+	-webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.3);
+	   -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.3);
+	    -ms-box-shadow: inset 0 1px 2px rgba(0,0,0,0.3);
+	     -o-box-shadow: inset 0 1px 2px rgba(0,0,0,0.3);
+	        box-shadow: inset 0 1px 2px rgba(0,0,0,0.3);
+*/
+/* ↑↑↑↑↑ Interface / Элементы интерфейса
+//////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+/* Extra Usefulness / Дополнительные полезности
+//////////////////////////////////////////////////////////////////////////////////////////////////// */
+.dg-button,.dg-button *,.dg-unselectable,.dg-unselectable *{
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+}
+.dg-button::selection,     .dg-button *::selection,     .dg-unselectable::selection,     .dg-unselectable *::selection     {background-color:transparent;color:inherit}
+.dg-button::-moz-selection,.dg-button *::-moz-selection,.dg-unselectable::-moz-selection,.dg-unselectable *::-moz-selection{background-color:transparent;color:inherit}
+
+.dg-fixC::before,.dg-fixC::after,.dg-fixMC::before,.dg-fixMC::after,.dg-fixCa::after,.dg-link--wrap::before,.dg-link--wrap::after{content:'';display:table}
+.dg-fixC::after,.dg-fixMC::after,.dg-fixCa::after{clear:both}
+
+/* ↑↑↑↑↑ Extra Usefulness / Дополнительные полезности
+//////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+/* Lists & Grids / Списки и сетки
+//////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+.dg-list{list-style:none}/* TODO?: .dg-list* → .dg-set* *//* TODO: derfex- */
+.dg-set{list-style:none}
+
+
+/* TODO: derfex- */
+.dg-list.dg-list--inline-block{text-align:justify}
+.dg-list.dg-list--inline-block>.dg-li{display:block}
+.dg-list.dg-list--inline-block[data-dg-cssquantis]>.dg-li{display:inline-block}
+.dg-list.dg-list--inline-block[data-dg-cssquantis="2"]>.dg-li{width:49%}
+.dg-list.dg-list--inline-block[data-dg-cssquantis="3"]>.dg-li{width:32%}
+.dg-list.dg-list--inline-block[data-dg-cssquantis="4"]>.dg-li{width:24%}
+.dg-list.dg-list--inline-block[data-dg-cssquantis="5"]>.dg-li{width:19%}
+.dg-set.dg-set--inline-block{text-align:justify}
+.dg-set.dg-set--inline-block>.dg-li{display:block}
+.dg-set.dg-set--inline-block[data-dg-cssquantis]>.dg-li{display:inline-block}
+.dg-set.dg-set--inline-block[data-dg-cssquantis="2"]>.dg-li{width:49%}
+.dg-set.dg-set--inline-block[data-dg-cssquantis="3"]>.dg-li{width:32%}
+.dg-set.dg-set--inline-block[data-dg-cssquantis="4"]>.dg-li{width:24%}
+.dg-set.dg-set--inline-block[data-dg-cssquantis="5"]>.dg-li{width:19%}
+
+
+
+/* TODO: derfex- */
+.dg-list--flexbox{display:flex;flex-wrap:wrap;justify-content:space-between}
+.dg-list.dg-list--flexbox>.dg-li{}
+.dg-set--flexbox{display:flex;flex-wrap:wrap;justify-content:space-between}
+.dg-set.dg-set--flexbox>.dg-fi{}
+
+
+/* FD, FW, FF, JC, AI, AC, FG, FS, FB, AS */
+.dg-flexbox{display:flex}
+
+.dg-flexbox.dg-flexbox--FD-row{flex-direction:row}
+.dg-flexbox.dg-flexbox--FD-row-reverse{flex-direction:row-reverse}
+.dg-flexbox.dg-flexbox--FD-column{flex-direction:column}
+.dg-flexbox.dg-flexbox--FD-column-reverse{flex-direction:column-reverse}
+
+.dg-flexbox.dg-flexbox--FW-nowrap{flex-wrap:nowrap}
+.dg-flexbox.dg-flexbox--FW-wrap{flex-wrap:wrap}
+.dg-flexbox.dg-flexbox--FW-wrap-reverse{flex-wrap:wrap-reverse}
+
+.dg-flexbox.dg-flexbox--JC-flex-start{justify-content:flex-start}
+.dg-flexbox.dg-flexbox--JC-flex-end{justify-content:flex-end}
+.dg-flexbox.dg-flexbox--JC-center{justify-content:center}
+.dg-flexbox.dg-flexbox--JC-space-between{justify-content:space-between}
+.dg-flexbox.dg-flexbox--JC-space-around{justify-content:space-around}
+
+.dg-flexbox.dg-flexbox--AI-stretch{align-items:stretch}
+
+.dg-flexbox.dg-flexbox--AC-stretch{align-content:stretch}
+
+.dg-fi--pct20{flex:1 0 20%}
+.dg-fi--pct25,.dg-fi--fourth{flex:1 0 25%}
+.dg-fi--pct33,.dg-fi--third{flex:1 0 33.333%}
+.dg-fi--pct50,.dg-fi--half{flex:1 0 50%}
+.dg-fi--pct66{flex:1 0 66.666%}
+.dg-fi--pct75{flex:1 0 75%}
+
+.dg-flexbox .dg-flexbox--AS-flex-start{align-self:flex-start}
+.dg-flexbox .dg-flexbox--AS-flex-end{align-self:flex-end}
+
+
+/* TODO */
+/*.dg-flexbox{display:flex;flex-wrap:wrap;justify-content:center}*/
+.dg-fi{}
+.dg-grid{}
+.dg-gi{}
+
+
+
+
+
+h1,h2,h3,h4,h5,h6,.dg-title{font-weight:700}
+h1.dg-title,.dg-title1{font-size:3.2em;margin:.67em 0}
+h2.dg-title,.dg-title2{font-size:2.4em;margin:.83em 0}
+h3.dg-title,.dg-title3{font-size:1.87em;margin:1em 0}
+h4.dg-title,.dg-title4{font-size:1em;margin:1.33em 0}
+h5.dg-title,.dg-title5{font-size:1.33em;margin:1.67em 0}
+h6.dg-title,.dg-title6{font-size:1.07em;margin:2.33em 0}
+h6.dg-title,.dg-title.dg-title6{font-size:.67em;margin:2.33em 0}/* derfex? :: усиливать .dg-title? */
+.dg-ww h1.dg-title,.dg-ww .dg-title1{font-size:2em;margin:.67em 0}
+.dg-ww h2.dg-title,.dg-ww .dg-title2{font-size:1.5em;margin:.83em 0}
+.dg-ww h3.dg-title,.dg-ww .dg-title3{font-size:1.17em;margin:1em 0}
+.dg-ww h4.dg-title,.dg-ww .dg-title4{font-size:1em;margin:1.33em 0}
+.dg-ww h5.dg-title,.dg-ww .dg-title5{font-size:.83em;margin:1.67em 0}
+.dg-ww h6.dg-title,.dg-ww .dg-title6{font-size:.67em;margin:2.33em 0}
+.dg-title.dg-title:first-child{margin-top:0}
+
+
+
+
+.dg-article{}
+.dg-article .dg-p{font-size:1.4em;padding-bottom:1em;line-height:150%;font-weight:400;text-indent:2em;text-align:justify}
+.dg-article .dg-img{display:block;width:100%}
+
+
+
+.dg-input,.dg-textarea{font:inherit}
+
+
+
+/* derfex? :: dev
+//////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* img */
+.dg-img{}
+.dg-img-box{}
+.dg-img-box .dg-img{display:block}
+
+
+
+/* max100 */
+.dg-100{width:100%;height:100%}
+
+.dg-min100.dg-img-box .dg-img,
+.dg-min100{min-width:100%;min-height:100%}
+
+.dg-max100.dg-img-box .dg-img,
+.dg-max100{max-width:100%;max-height:100%}
+
+.dg-100.dg-img-box .dg-img{width:100%}
+/* derfex? */
+
+
+
+
+
+/* Media :: Mobile First Method
+*************************************************/
+.dg-w{margin:auto;overflow:hidden}
+/* Расширяем границы .dg-w, для возможности показать за его пределами другое содержимое
+ * При этом из-за этого на узких экранах не будет появляться горизонтальная полоса прокрутки.
+ * Могут возникнуть проблемы с background дочернего элемента на узких мониторах. Следить за этим!
+ */
+.dg-wExpand{overflow:hidden;width:100%}
+.dg-wExpand>.dg-w{overflow:visible}
+
+
+.dg-ww{font-size:1.6em;padding:.625em}
+.dg-w{width:100%;min-width:300px;max-width:1280px}
+.dg-ww{font-size:1.6em;padding:.625em}
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* • Fortunum SM */
+@media only screen and (min-width : 360px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* • Fortunum MD */
+@media only screen and (min-width : 750px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+
+/* • Fortunum LG */
+@media only screen and (min-width : 1280px) {
+
+}
+
+
+
+.dg-center-clamp{display:table;margin:auto}
+/* Одиночные правила
+*************************************************/
+/* 151116 */.dg-FL{float:left}.dg-FR{float:right}
+/* 160920 */.dg-TAL{text-align:left}.dg-TAR{text-align:right}.dg-TAC{text-align:center}.dg-TAJ{text-align:justify}
+/* 160920 */.dg-OA{overflow:auto}.dg-OH{overflow:hidden}.dg-OS{overflow:scroll}.dg-OV{overflow:visible}
+/* 161003 */.dg-FL_i{float:left!important}.dg-FR_i{float:right!important}
+/* 161003 */.dg-TAL_i{text-align:left!important}.dg-TAR_i{text-align:right!important}.dg-TAC_i{text-align:center!important}.dg-TAJ_i{text-align:justify!important}
+/* 161003 */.dg-OA_i{overflow:auto!important}.dg-OH_i{overflow:hidden!important}.dg-OS_i{overflow:scroll!important}.dg-OV_i{overflow:visible!important}
+/* 161003 */.dg-OxA{overflow-x:auto}.dg-OxH{overflow-x:hidden}.dg-OxS{overflow-x:scroll}.dg-OxV{overflow-x:visible}
+/* 161003 */.dg-OyA{overflow-y:auto}.dg-OyH{overflow-y:hidden}.dg-OyS{overflow-y:scroll}.dg-OyV{overflow-y:visible}
+/* 161003 */.dg-OxA_i{overflow-x:auto!important}.dg-OxH_i{overflow-x:hidden!important}.dg-OxS_i{overflow-x:scroll!important}.dg-OxV_i{overflow-x:visible!important}
+/* 161003 */.dg-OyA_i{overflow-y:auto!important}.dg-OyH_i{overflow-y:hidden!important}.dg-OyS_i{overflow-y:scroll!important}.dg-OyV_i{overflow-y:visible!important}
